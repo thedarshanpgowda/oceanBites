@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-header::after {
+    content: "";
+    background-image: url('https://images.unsplash.com/photo-1623962470629-ead26532ef44?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80');
+    background-position: bottom;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 110vw;
+    z-index: -10;
+    opacity: 0.5;
+    filter: contrast(10px);
+    filter: blur(1px);
+    overflow-x: hidden;
+
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.main-header {
+    height: 100vh;
+    width: 90vw;
+    z-index: -20;
+    /* padding-top: vw; */
+}
+body{
+    background: black;
+
+}
+
+.fixed{
+    float: right;
+}
+.icon img:hover{
+    height: 37px;
+}
+
+.icon{
+    margin-right: 20px;
+    margin-top: 10px;
+    display: flex;
+    /* border: 2px red solid; */
+    height: 30px;
+    justify-content: flex-end;
+}
+.icon img{
+    height: 30px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: fixed;
+    right: 20px;
+    z-index: 10;
+}
+.main_title{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px 10px 10px;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(7vw);
+
+}
+.heading{
+    display: block;
+    width: 80vw;
+    margin: auto;
+    padding-left: 20px;
+    text-align: center;
+    /* border: 2px red solid; */
+    font-size: 5vw;
+    font-family: 'Love Light', cursive;
+    text-align: center;
+    color: #abbaab;
+    font-family: 'Loved by the King', cursive;
+    
+}
+.intro__para{
+    /* border: 2px red solid; */
+    display: block;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    font-family: 'Moon Dance', cursive;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-weight: 400;
+    /* word-spacing: 2px; */
+    /* background-color: #f5f5f56b; */
+    padding: 30px 50px;
+    color: #CFDEF3;
+
+    border-radius: 15px;
+    height: 50%;
+    font-size: 3vmin;
+    font-family: 'Kalam', cursive;
+    font-family: 'Cookie', cursive;
+}
+.reg__button{
+    display: flex;
+    width: 70vw;
+    margin: auto;
+    /* border: 2px red solid; */
+    justify-content: center;
+    /* display: block; */
+}
+.btn button{
+    outline-color: none;
+    outline: none;
+    border: none;
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 10px;
+    font-size: .9vw;
+    font-weight: bold;
+    background-color: #3a7bd5;
+    height: 3vw;
+    margin-top: 0px;
+    color: #3a7bd5;
+    width: 10vw;
+    background: #f5f5f5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5f5f5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5f5f5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+
+@media only screen and (max-width:480px) {
+    body{
+        background-color: #000;
+    }
+    .fixed{
+        display: none;
+    }
+    .main-header::after{
+        transform: scale(1);
+    }
+    .main-header{
+        height: 100vw;
+    }
+    .intro__para{
+        color: whitesmoke;
+        padding: 5px;
+        margin: 5px 15px;
+        width: 80vw;
+
+    }
+    .heading{
+        color: #fff;
+        padding-left: 0;
+        padding: 5px;
+        margin: 5px;
+        width: 50vw;
+    }
+    .reg__button{
+        width: 50vw;
+    }
+    .btn button{
+        width: 20vw;
+        height: 6vw;
+        font-size: 1vw;
+    }
+}

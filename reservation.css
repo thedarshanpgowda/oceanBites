@@ -1,0 +1,124 @@
+@import url('footer.css');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* border: 2px rebeccapurple solid; */
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+
+ul li{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+.column1{
+    padding: 3vw;
+    font-size: 0.9vw;
+}
+.primary_body_content {
+    flex-direction: column;
+    display: flex;
+    position: relative;
+    padding: 3.5vw;
+}
+.secondary_body{
+    padding-left: 12vw;
+    display: flex;
+    flex-direction: column;
+}
+.heading {
+    position: relative;
+}
+
+.mainheader h3 {
+    display: block;
+    width: 11vw;
+    margin: 4vw auto 0px auto;
+    padding: 2vw 0 0;
+    /* position: absolute; */
+    left: 0vw;
+    right: 0;
+    transform: translateY(-86px);
+    background-color: #fff;
+}
+
+.mainheader h1 {
+    display: block;
+    font-family: 'Alegreya', serif;
+    width: 26vw;
+    /* border-top: 2px #1565c061 solid; */
+    margin: 0 auto;
+    padding: 0vw 0 2vw 0;
+    z-index: -1;
+    height: 3vw;
+}
+
+.secondaryheader {
+    display: flex;
+    height: 25vw;
+}
+
+.item {
+    /* border: 2px rebeccapurple solid; */
+    padding: 4vw 0vw;
+    margin: 4vw 2vw;
+    width: 40%;
+}
+
+.item h2 {
+    margin-bottom: 1.5vw;
+}
+.item p {
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 1.6vw;
+}
+
+.inp1 {
+    width: 25%;
+    padding: 1.2vw;
+    margin: 1vw;
+    background-color: #eee;
+    outline: none;
+    border: none;
+}
+
+.inp {
+    width: 82%;
+    padding: 5vw 0vw;
+    text-indent: 2vw
+}
+
+.inputs button {
+    padding: 1.5vw;
+    width: 12vw;
+    background-color: #1565c061;
+    display: block;
+    text-align: center;
+    margin: 1vw;
+    outline: none;
+    border: none;
+}
+.box{
+    height: 20vw;
+    background-color: #000a;
+    display: flex;
+    justify-content: space-evenly;
+    color: #fff;
+    align-items: center;
+    font-size: 2vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container{
+    background-image: url('https://images.unsplash.com/photo-1599458252573-56ae36120de1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=600&q=60');
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+}

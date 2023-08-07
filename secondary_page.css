@@ -1,0 +1,120 @@
+.secondary_page{
+    height: 100vh;
+    display: flex;
+    background-color: black;
+    justify-content: flex-end;
+    margin-top: 0px;
+
+}
+.secondary_page_info{
+    padding: 5vw;
+}
+.secondary_page_info h1{
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Lilita One', cursive;
+    color: azure;
+    font-size: 4vw;
+    padding: 5vw;
+}
+.secondary_img img{
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
+    .secondary_page{
+        display: flex;
+        flex-direction: column;
+    }
+    .secondary_img img{
+        max-height: 80vw;
+    }
+}
+
+.secondary_page_info p{
+    padding: 0vw 5vw ;
+    text-align: justify;
+    color: azure;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3vw;
+}
+.secondary_page_info button{
+    margin: 2vw 5vw ;
+    padding: 0.5vw 1.5vw;
+    font-size: 1vw;
+
+}
+
+
+/* shopping page */
+
+.shoping_page{
+    height: 50vw;
+    background-color: black;
+    padding: 5vw;
+    margin: 2vw;
+    border-radius: 25px ;
+}
+.front_bar{
+    background-color: #ffffffa2;
+    height: 50vw;
+    border-radius: 15px ;
+    display: flex;
+}
+.item_img img{
+    height: 50vw;
+    border-radius: 15px 0px 0px 15px;
+}
+.item_info{
+    padding: 5vw;
+}
+.item_info h1{
+    padding: 1vw 0vw;
+    font-family: 'Lilita One', cursive;
+    font-size: 4vw;
+}
+.item_info p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+    height: auto;
+    font-size: 1.3vw;
+}
+.item_info button{
+    padding: 1vw 2vw; 
+    margin: 2.5vw 0vw; 
+    font-size: 1vw;
+}
+.item_info button a{
+    color: black;
+    font-weight: 600;
+}
+
+@media only screen and (max-width:480px){
+    .secondary_page{
+        height: 70vw;
+        /* margin-top: 20vh; */
+        transform: translateY(0px);
+    }
+    .secondary_img img{
+        height: 70vw;
+    }
+    .secondary_page_info{
+
+        width: 50%;
+        height: 50vw;
+    }
+    .secondary_page_info button{
+        margin: 2vw 5vw ;
+        padding: 0.2vw 1vw;
+    }
+    /* shopping page */
+    .shoping_page{
+        border-radius: 0px;
+        margin: 0px;
+    }
+    .item_img, .item_info{
+        height: 50vh;
+    } 
+    .item_info button{
+        padding: 0.2vw 1vw; 
+    }
+} 
